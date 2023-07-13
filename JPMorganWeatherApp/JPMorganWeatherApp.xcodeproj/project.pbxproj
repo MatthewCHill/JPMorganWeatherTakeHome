@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		349C793A2A604F9C00E39D92 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C79392A604F9C00E39D92 /* AppDelegate.swift */; };
 		349C793C2A604F9C00E39D92 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C793B2A604F9C00E39D92 /* SceneDelegate.swift */; };
-		349C793E2A604F9C00E39D92 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 349C793D2A604F9C00E39D92 /* ViewController.swift */; };
 		349C79412A604F9C00E39D92 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349C793F2A604F9C00E39D92 /* Main.storyboard */; };
 		349C79432A604F9E00E39D92 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 349C79422A604F9E00E39D92 /* Assets.xcassets */; };
 		349C79462A604F9E00E39D92 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 349C79442A604F9E00E39D92 /* LaunchScreen.storyboard */; };
@@ -19,7 +18,6 @@
 		349C79362A604F9C00E39D92 /* JPMorganWeatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JPMorganWeatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		349C79392A604F9C00E39D92 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		349C793B2A604F9C00E39D92 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		349C793D2A604F9C00E39D92 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		349C79402A604F9C00E39D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		349C79422A604F9E00E39D92 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		349C79452A604F9E00E39D92 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -56,15 +54,22 @@
 		349C79382A604F9C00E39D92 /* JPMorganWeatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				349C79392A604F9C00E39D92 /* AppDelegate.swift */,
-				349C793B2A604F9C00E39D92 /* SceneDelegate.swift */,
-				349C793D2A604F9C00E39D92 /* ViewController.swift */,
+				349C794D2A604FF700E39D92 /* SupportingFiles */,
 				349C793F2A604F9C00E39D92 /* Main.storyboard */,
-				349C79422A604F9E00E39D92 /* Assets.xcassets */,
 				349C79442A604F9E00E39D92 /* LaunchScreen.storyboard */,
-				349C79472A604F9E00E39D92 /* Info.plist */,
 			);
 			path = JPMorganWeatherApp;
+			sourceTree = "<group>";
+		};
+		349C794D2A604FF700E39D92 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				349C79392A604F9C00E39D92 /* AppDelegate.swift */,
+				349C79422A604F9E00E39D92 /* Assets.xcassets */,
+				349C79472A604F9E00E39D92 /* Info.plist */,
+				349C793B2A604F9C00E39D92 /* SceneDelegate.swift */,
+			);
+			path = SupportingFiles;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +143,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				349C793E2A604F9C00E39D92 /* ViewController.swift in Sources */,
 				349C793A2A604F9C00E39D92 /* AppDelegate.swift in Sources */,
 				349C793C2A604F9C00E39D92 /* SceneDelegate.swift in Sources */,
 			);
@@ -288,7 +292,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JPMorganWeatherApp/Info.plist;
+				INFOPLIST_FILE = JPMorganWeatherApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -315,7 +319,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = JPMorganWeatherApp/Info.plist;
+				INFOPLIST_FILE = JPMorganWeatherApp/SupportingFiles/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
